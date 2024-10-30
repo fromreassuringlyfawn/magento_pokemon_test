@@ -1,0 +1,12 @@
+<?php
+/** @var \Jmrz\PokemonApi\Block\Pokemon\PokemonDetails $block */
+$id = $block->getRequest()->getParam('id');
+$pokemonData = $block->getPokemonName($id);
+?>
+
+<div class="pokemon-description">
+<h2>Pokemon details:</h2>
+<h3><?php echo "Base experience: " . ucfirst($pokemonData['base_experience']); ?></h3>
+<h3><?php echo "Height: " . ucfirst($pokemonData['height']); ?></h3>
+<h3><?php echo "Weight: " . ucfirst($pokemonData['weight']); ?></h3>
+</div>

@@ -1,0 +1,9 @@
+<?php
+/** @var \Jmrz\PokemonApi\Block\Pokemon\PokemonDetails $block */
+$id = $block->getRequest()->getParam('id');
+$pokemonData = $block->getPokemonName($id);
+?>
+
+<div class="template">
+    <p><img src="<?= ucfirst($pokemonData['sprites']['front_default']); ?>" /></p>
+</div>

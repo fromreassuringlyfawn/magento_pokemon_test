@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.main.title">
+            <block class="Jmrz\PokemonApi\Block\Pokemon\PokemonDetails" name="product.pokemon.name" template="Jmrz_PokemonApi::details/title.phtml"/>
+        </referenceContainer>
+        <referenceContainer name="product.info.media">
+            <block class="Jmrz\PokemonApi\Block\Pokemon\PokemonDetails" name="product.pokemon.image" template="Jmrz_PokemonApi::details/image.phtml"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Jmrz\PokemonApi\Block\Pokemon\PokemonDetails" name="product.pokemon.description" template="Jmrz_PokemonApi::details/description.phtml" />
+        </referenceContainer>
+    </body>
+</page>
